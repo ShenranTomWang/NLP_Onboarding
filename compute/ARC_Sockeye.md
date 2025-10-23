@@ -15,3 +15,22 @@ You have a limited space at your home directory, so I recommend you to store you
 - Although ARC Sockeye uses [Slurm](technical/slurm) to queue jobs, there are not a lot of people competing for resources, so I normally get my allocation as soon as I request it.
 - A drawback compared to other platforms is that ARC Sockeye only have V100s, which is slower and has smaller memory.
 - You are recommended to use `conda` to set up your environments.
+
+## Slurm Specs
+For basic usage of Slurm, checkout the [Slurm document](technical/slurm.md). To start an interactive session, use:
+```shell
+salloc --time=4:0:0 --mem-per-cpu=16G --ntasks=1 --nodes=1 --gpus=1 --constraint=gpu_mem_32 --account=xxxxxx-gpu
+```
+Below is a template job script for ARC Sockeye:
+```shell
+#!/bin/bash
+#SBATCH --job-name=...
+#SBATCH --account=xxxxxx-gpu
+#SBATCH --time=3-00:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --mem=32G
+#SBATCH --gpus=1
+#SBATCH --constraint=gpu_mem_32
+...
+```

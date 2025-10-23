@@ -1,6 +1,6 @@
 # UBC NLP Servers
 Our lab has 3 servers with a total of 6 GPUs. Access to these GPUs are restricted to only members of our group.  
-This document will walk you through steps to [obtain access](obtaining-access) to our servers, details about the [file system](#file-system), as well as providing you with some of [my experiences](personal-experiences) using these compute clusters.
+This document will walk you through steps to [obtain access](#obtaining-access) to our servers, details about the [file system](#file-system), as well as providing you with some of [my experiences](#personal-experiences) using these compute clusters.
 
 ## Getting Access
 1. TODO: get access. Our servers have addresses `ubc-nlp-gpu1`, `ubc-nlp-gpu2` and `ubc-nlp-gpu3`.
