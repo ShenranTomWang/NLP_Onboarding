@@ -29,7 +29,7 @@ pip install --no-index requirements.txt     # Using --no-index to install pre-bu
 ## Slurm Specs
 For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). For Compute Canada clusters, you can use `sq` to see status of all your jobs. to start an interactive session, use:
 ```shell
-salloc --time=4:0:0 --mem-per-cpu=16G --ntasks-per-node=8 --gpus-per-node=a100:1
+salloc --time=4:0:0 --mem-per-cpu=16G --ntasks-per-node=8 --gpus-per-node=a100:1 --account=def-xxxxxx
 ```
 Below is a template job script for Compute Canada clusters:
 ```shell
