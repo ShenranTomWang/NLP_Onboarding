@@ -1,5 +1,5 @@
 # ARC Sockeye Tutorial
-ARC Sockeye is a High-Performance computing platform available to UBC researchers only. You must have a UBC CWL to use this platform. [UBC myVPN](https://it.ubc.ca/services/email-voice-internet/myvpn) is required to log in to the server.  
+ARC Sockeye is a High-Performance computing platform available to UBC researchers only. You must have a UBC CWL to use this platform. [UBC myVPN](https://it.ubc.ca/services/email-voice-internet/myvpn) is required to log in to the server if you are not connected to UBC wifi.  
 This document will walk you through [Getting Access](#getting-access) to the ARC Sockeye compute cluster, details of the [file system](#file-system), as well as some of [my experiences](#personal-experiences) of this cluster.
 
 ## Getting Access
