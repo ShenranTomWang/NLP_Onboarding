@@ -25,13 +25,17 @@ salloc --time=4:0:0 --mem-per-cpu=16G --ntasks=1 --nodes=1 --gpus=1 --constraint
 Below is a template job script for ARC Sockeye:
 ```shell
 #!/bin/bash
-#SBATCH --job-name=...
-#SBATCH --account=xxxxxx-gpu
-#SBATCH --time=3-00:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --mem=32G
 #SBATCH --gpus=1
+#SBATCH --ntasks=4
+#SBATCH --mem=24G
+#SBATCH --time=2-00:00:00
+#SBATCH --account=xxxxxx-gpu
 #SBATCH --constraint=gpu_mem_32
+#SBATCH --output=output_logging_file.log
+#SBATCH --error=error_logging_file.log
+#SBATCH --mail-user=your@e.mail
+#SBATCH --mail-type=ALL
+#SBATCH --job-name=job_name
 ...
 ```
