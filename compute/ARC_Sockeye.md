@@ -6,6 +6,7 @@ This document will walk you through [Getting Access](#getting-access) to the ARC
 1. To get access, contact your supervisor so they can reach out to ARC Sockeye.
 2. Once you obtained access, follow instructions [here](https://it.ubc.ca/services/email-voice-internet/myvpn) to setup UBC myVPN.
 3. Turn on your UBC myVPN, you can connect to sockeye at `sockeye.arc.ubc.ca` with your CWL. So `ssh cwl@sockeye.arc.ubc.ca`.
+4. You can manage your jobs at [ARC Ondemand](https://ondemand.arc.ubc.ca/). Documentation is available [here](https://confluence.it.ubc.ca/spaces/UARC/pages/168841664/Using+Sockeye).
 4. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key to the server](../technical/ssh_key.md).
 
 ## File Systems
