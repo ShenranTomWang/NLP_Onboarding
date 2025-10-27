@@ -32,7 +32,7 @@ Now `ssh -J CWL@remote.cs.ubc.ca CWL@ubc-nlp-gpu1` becomes `ssh UBC-NLP-Lab-GPU1
 - `ubc-nlp-gpu1`: TODO: how many GPUs? Specs?
 - `ubc-nlp-gpu2`: TODO: how many GPUs? Specs?
 - `ubc-nlp-gpu3`: 4 RTX A6000 (48GB), 2 RTX 6000 Ada Generation (48GB)
-- `ubcml-nlp`: 1 RTX A5000 (24 GB)
+- `ubcml-nlp`: 1 RTX A5000 (24 GB). TODO: provide more information once I log in there, e.g. using Slurm?
 
 ## File System
 Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space.
