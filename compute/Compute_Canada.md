@@ -6,9 +6,9 @@ This document will walk you through steps to [obtain access](#obtaining-access) 
 1. Go to [https://ccdb.alliancecan.ca/](https://ccdb.alliancecan.ca/) to register for your account. If you already have an account, log in to it.
 2. If you just registered, skip this step. In you have an account and logged in, check your roles: if your current role is already with your current supervisor, skip this step. Otherwise, go to _My Account_ -> _Apply for a New Role_ and enter your supervisor's information there. You will need your supervisor to give you their _CCRI_.
 3. An email will be sent to your supervisor to approve your access if you just registered or switched supervisor. Once approved, you can go to _Resources_ -> _Access Systems_ to gain access to compute servers. We will normally be using servers under _HPC_. Each server has different hardware. You can find details [here](https://docs.alliancecan.ca/wiki/Technical_documentation) under _Resources_ on the left panel.
-4. (Optional) if your supervisor is affiliated with the [Vector Institute](https://vectorinstitute.ai/), you have access to [Killarney](https://docs.alliancecan.ca/wiki/Killarney). You can request access to Killarney under _Resources_ -> _Access Systems_ -> _Artificial Intelligence_.
-5. Once you are granted access to compute servers, you can `ssh` into them with your _username_: `ssh username@address`. Server addresses can be found [here](https://docs.alliancecan.ca/wiki/Technical_documentation) under _Resources_ on the left panel.
-6. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key to the server](../technical/ssh_key.md).
+4. (Optional) if your supervisor is affiliated with the [Vector Institute](https://vectorinstitute.ai/), you have access to [Killarney](https://docs.alliancecan.ca/wiki/Killarney). Details for setting up Killarney can be found in [Killarney setup manual](./Killarney.md)
+5. Make sure you have [set up MFA](https://docs.alliancecan.ca/wiki/Multifactor_authentication#Use_a_smartphone_or_tablet) and [added your ssh key](https://docs.alliancecan.ca/wiki/SSH_Keys#Installing_your_key).
+6. Once you are granted access to compute servers, you can `ssh` into them with your _username_: `ssh username@address`. Server addresses can be found [here](https://docs.alliancecan.ca/wiki/Technical_documentation) under _Resources_ on the left panel.
 
 ## File System
 There will be two folders, `scratch` and `projects` in your home directory. Please keep all large files or environments in `scratch` folder.
