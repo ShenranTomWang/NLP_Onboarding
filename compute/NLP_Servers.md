@@ -23,6 +23,11 @@ Host UBC-NLP-Lab-GPU1
 ```
 Now `ssh -J CWL@remote.cs.ubc.ca CWL@ubc-nlp-gpu1` becomes `ssh UBC-NLP-Lab-GPU1`.
 
+## System Specs
+- `ubc-nlp-gpu1`: TODO: how many GPUs? Specs?
+- `ubc-nlp-gpu2`: TODO: how many GPUs? Specs?
+- `ubc-nlp-gpu3`: 4 RTX A6000, 2 RTX 6000 Ada Generation
+
 ## File System
 Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space.
 
