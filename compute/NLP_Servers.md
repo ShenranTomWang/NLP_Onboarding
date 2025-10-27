@@ -3,9 +3,10 @@ Our lab has 3 servers with a total of 6 GPUs. Access to these GPUs are restricte
 This document will walk you through steps to [obtain access](#obtaining-access) to our servers, details about the [file system](#file-system), as well as providing you with some of [my experiences](#personal-experiences) using these compute clusters.
 
 ## Getting Access
-1. To obtain access, email [help@cs.ubc.ca](help@cs.ubc.ca) and CC your supervisor. You will need access to [remote.cs.ubc.ca](remote.cs.ubc.ca) and our servers have with addresses `ubc-nlp-gpu1`, `ubc-nlp-gpu2` and `ubc-nlp-gpu3`.
+1. To obtain access, email the help desk at [help@cs.ubc.ca](help@cs.ubc.ca) and CC your supervisor. You will need access to [remote.cs.ubc.ca](remote.cs.ubc.ca) and our servers with addresses `ubc-nlp-gpu1`, `ubc-nlp-gpu2` and `ubc-nlp-gpu3`.
 2. To login to our compute servers, you will need to proxy jump from UBC Remote server. On command line, this will be `ssh -J CWL@remote.cs.ubc.ca CWL@ubc-nlp-gpu1`. Alternatively, you can first `ssh CWL@remote.cs.ubc.ca` and then do `ssh CWL@ubc-nlp-gpu1` there. To configure your ssh config file, see the [configuration section](#ssh-configuration).
-3. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key](../technical/ssh_key.md) to `remote.cs.ubc.ca`.
+3. (Optional) you are given 10GB storage upon approval of access to the cluster. If you want more storage, email the help desk at [help@cs.ubc.ca](help@cs.ubc.ca) and CC your supervisor to get allocation under `/ubc/cs/research/nlp-raid/students`.
+4. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key](../technical/ssh_key.md) to `remote.cs.ubc.ca`.
 
 ## SSH Configuration
 You can setup your ssh config list this:
