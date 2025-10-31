@@ -9,6 +9,9 @@ This document will walk you through [Getting Access](#getting-access) to the ARC
 4. You can manage your jobs at [ARC Ondemand](https://ondemand.arc.ubc.ca/). Documentation is available [here](https://confluence.it.ubc.ca/spaces/UARC/pages/168841664/Using+Sockeye).
 4. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key to the server](../technical/ssh_key.md).
 
+## System Specs
+You have access to V100-32G and V100-16G GPUs on Sockeye.
+
 ## File Systems
 You have a limited space at your home directory, so I recommend you to store your environments and large files in your `scratch` which can be found at `/scratch/{supervisor-allocation-name}/`.
 
