@@ -44,3 +44,10 @@ module load ...
 source .../bin/activate
 ...
 ```
+
+## Softwares
+Like any high-performance computing clusters, Compute Canada has prepared commonly used compilers (cuda, gcc, etc.) and other modules for you. You may load them using:
+```shell
+module load {module-name}
+```
+Details are available at the [software information page](https://docs.alliancecan.ca/wiki/Available_software).
