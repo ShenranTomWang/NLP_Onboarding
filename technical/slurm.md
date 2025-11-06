@@ -1,6 +1,10 @@
 # Slurm Tutorial
 [Slurm](https://slurm.schedmd.com/documentation.html) is a CLI workload manager that manages queues of submitted jobs.  
-In this document, I will walk you through some [basic usage](#basic-usage) of Slurm.
+In this document, I will walk you through some [basic concepts](#basic-concept) and [basic usage](#basic-usage) of Slurm.
+
+## Basic Concept
+Once you log in to a cluster with Slurm, you are allocated a basic cpu for managing your files (login node), etc. Notice that this cpu allocation is only designed for lightweight executions such as managing the file system and running the VSCode server, and not running any compute-heavy operations. If you want access to a compute node (which could potentially contain a GPU), you will need to use Slurm.  
+When you obtain a compute node with Slurm, you will obtain access to your specified hardware (e.g. GPUs). It is worth noticing that even if the cluster itself has GPUs, you will not be able to see them in the login node. You will only be exposed to the specified hardware upon approval of your Slurm request.
 
 ## Basic Usage
 Most common ussecases are listed below:
