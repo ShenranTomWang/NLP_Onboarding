@@ -16,14 +16,7 @@ There will be two folders, `scratch` and `projects` in your home directory. Plea
 ## Personal Experiences
 - Compute Canada is open to almost all researchers in Canada, meaning that there are many people competing over a small number of GPUs. The servers use [Slurm](../technical/slurm.md) to manage jobs, which could cause a very long wait time.
 - Certain older servers (e.g. Narval) do not have internet in their compute nodes, meaning that when you submit a job, it runs without internet connection. However, newer servers (Fir, Nibi) now have internet connection in compute nodes.
-- Setting up the environment could be very tricky as you are not allowed to use `conda`. Instead, they have pre-built wheels for python packages. To set up an environment, I recommend using `python`'s `virtualenv`:
-```shell
-module load StdEnv/2023     # In general this should be sufficient. If you require certain other compilers you can module load them manually
-ENVDIR="directory/you/want/to/store/your/environment"
-virtualenv --no-download ${ENVDIR}
-source ${ENVDIR}/bin/activate
-pip install --no-index requirements.txt     # Using --no-index to install pre-built wheels. Since the environment here is less customizable, always installing from the web may cause conflicts
-```
+- Setting up the environment could be very tricky as you are not allowed to use `conda`. Instead, they have pre-built wheels for python packages. To set up an environment, I recommend using [`python`'s `virtualenv`](../technical/virtualenv.md). Notice that Compute Canada clusters have [pre-built wheels](https://docs.alliancecan.ca/wiki/Available_Python_wheels) for common packages ready, so you can always first try `pip install --no-index` and then manually download unavailable packages.
 - (Not recommended) in certain scenarios where the above `virtualenv` setup cannot meet your requirements, you can use [Apptainer](../technical/apptainer.md).
 
 ## Slurm Specs
