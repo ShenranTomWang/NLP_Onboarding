@@ -48,3 +48,4 @@ Below is a template job script:
 ```
 
 ## Personal Experiences
+1. Do not switch to another network while you are connected to the server: you may create zombie vscode server process that blocks you from logging in next time.
