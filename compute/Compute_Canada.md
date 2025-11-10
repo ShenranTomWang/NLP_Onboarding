@@ -20,7 +20,7 @@ There will be two folders, `scratch` and `projects` in your home directory. Plea
 - (Not recommended) in certain scenarios where the above `virtualenv` setup cannot meet your requirements, you can use [Apptainer](../technical/apptainer.md).
 
 ## Slurm Specs
-For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). For Compute Canada clusters, you can use `sq` to see status of all your jobs. to start an interactive session, use:
+For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). For Compute Canada clusters, you can use `sq` to see status of all your jobs. To start an interactive session, use:
 ```shell
 salloc --time=4:0:0 --mem-per-cpu=16G --ntasks-per-node=8 --gpus-per-node=a100:1 --account=def-xxxxxx
 ```

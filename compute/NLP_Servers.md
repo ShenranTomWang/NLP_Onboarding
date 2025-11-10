@@ -32,9 +32,25 @@ Now `ssh -J CWL@remote.cs.ubc.ca CWL@ubc-nlp-gpu1` becomes `ssh UBC-NLP-Lab-GPU1
 - `ubc-nlp-gpu1`: TODO: how many GPUs? Specs?
 - `ubc-nlp-gpu2`: TODO: how many GPUs? Specs?
 - `ubc-nlp-gpu3`: 4 RTX A6000 (48GB), 2 RTX 6000 Ada Generation (48GB)
-- `ubcml-nlp`: 1 RTX A5000 (24 GB). TODO: provide more information once I log in there, e.g. using Slurm?
+- `ubcml-nlp`: 1 RTX A5000 (24 GB).
 
 ## File System
 Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space.
+
+## Slurm Specs
+For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). To start an interactive session, use:
+```shell
+salloc --time=4:0:0 --mem-per-cpu=16G --ntasks==1 --nodes=1 --gpus=1 --account=nlpgpo
+```
+Below is a template job script:
+```shell
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --gpus=1
+#SBATCH --mem-per-cpu=16G
+#SBATCH --time=12:0:0
+#SBATCH --partition=nlpgpo
+...
+```
 
 ## Personal Experiences
