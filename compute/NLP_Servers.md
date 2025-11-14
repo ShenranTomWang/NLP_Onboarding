@@ -29,7 +29,7 @@ Host UBC-ML-NLP
 Now `ssh -J CWL@remote.cs.ubc.ca CWL@submit-cs.cs.ubc.ca` becomes `ssh UBC-Submit-CS`.
 
 ## File System
-Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space.
+Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space. Note that this is a different file system from the your home directory and will cause bugs if your `.bashrc` is trying to run things there.
 
 ## Slurm Specs
 For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). To start an interactive session, use:
@@ -49,3 +49,4 @@ Below is a template job script:
 
 ## Personal Experiences
 1. Do not switch to another network while you are connected to the server: you may create zombie vscode server process that blocks you from logging in next time.
+2. If you installed tools (e.g. `conda`) in the storage directory, remember to remove the initialization code from your `.bashrc`. Having those code in your `.bashrc` could block your VSCode to log in to the server.
