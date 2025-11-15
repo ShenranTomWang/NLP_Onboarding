@@ -34,7 +34,7 @@ Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be
 ## Slurm Specs
 For basic usage of Slurm, checkout the [Slurm document](../technical/slurm.md). To start an interactive session, use:
 ```shell
-salloc --time=4:0:0 --mem-per-cpu=16G --ntasks==1 --nodes=1 --gpus=1 --account=nlpgpo
+salloc --time=4:0:0 --mem-per-cpu=16G --nodes=1 --gpus=1 --partition=nlpgpo
 ```
 Below is a template job script:
 ```shell
