@@ -1,6 +1,6 @@
 # UBC NLP Servers
 Our lab has 3 servers with a total of 6 GPUs. Access to these GPUs are restricted to only members of our group.  
-This document will walk you through steps to [obtain access](#obtaining-access) to our servers, details about the [file system](#file-system), as well as providing you with some of [my experiences](#personal-experiences) using these compute clusters.
+This document will walk you through steps to [obtain access](#obtaining-access) to our servers, details about the [file system](#file-system), as well as providing you with some of [my experiences](#personal-experiences) using these compute clusters. More information can be found [here](https://my.cs.ubc.ca/docs/using-department-research-cluster)
 
 ## Getting Access
 1. To obtain access, email the help desk at [help@cs.ubc.ca](help@cs.ubc.ca) and CC your supervisor. You will need access to [remote.cs.ubc.ca](remote.cs.ubc.ca) and Slurm submission servers with addresses `submit-cs.cs.ubc.ca`, `newcastle.cs.ubc.ca`, and `submit-ml`. For `submit-ml`, you will need to use Slurm with `partition=ubcml-nlp`. For the other two, you will use `--partition=ubcgpo`.
