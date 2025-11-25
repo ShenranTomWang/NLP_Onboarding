@@ -9,24 +9,27 @@ This document will walk you through steps to [obtain access](#obtaining-access) 
 4. (Optional) if you want to avoid entering your password each time you log in, consider [adding your ssh key](../technical/ssh_key.md) to `remote.cs.ubc.ca`.
 
 ## SSH Configuration
-You can setup your ssh config list this:
+You can setup your ssh config list like this:
 ```
 Host UBC-Remote-Research
     HostName remote.cs.ubc.ca
-    User shenranw
+    User <cwl>
     ForwardX11 yes
 Host UBC-Submit-CS
     HostName submit-cs.cs.ubc.ca
-    User shenranw
+    User <cwl>
     ProxyJump UBC-Remote-Research
     ForwardX11 yes
-Host UBC-ML-NLP
-    HostName submit-ml
-    User shenranw
-    ProxyJump UBC-Remote-Research
+Host UBC-NewCastle
+    HostName newcastle.cs.ubc.ca
+    User <cwl>
     ForwardX11 yes
+    ProxyJump UBC-Remote-Research
 ```
 Now `ssh -J CWL@remote.cs.ubc.ca CWL@submit-cs.cs.ubc.ca` becomes `ssh UBC-Submit-CS`.
+
+## Using NewCastle
+To use `Slurm` on NewCastle, you must `source /opt/slurm/set_submit_cs`.
 
 ## File System
 Our storage directory is in `/ubc/cs/research/nlp-raid/students/CWL/`. Please be reminded to consistently deleting unused files, as we often run out of storage. The old directory `/ubc/cs/research/nlp/CWL/` had ran out of space. Note that this is a different file system from the your home directory and will cause bugs if your `.bashrc` is trying to run things there.
